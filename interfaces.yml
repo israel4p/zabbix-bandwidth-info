@@ -1,0 +1,12 @@
+servers:
+  BGP-CONECT:
+    sfp-sfpplus1:
+      - LABEL
+      - ZABBIX_KEY_INPUT
+      - ZABBIX_KEY_OUTPUT
+
+    # Exemplo
+    LINK-INTERNET:
+      - LINK-OPERADORA
+      - net.if.in[ifHCInOctets.60]
+      - net.if.out[ifHCOutOctets.60]
